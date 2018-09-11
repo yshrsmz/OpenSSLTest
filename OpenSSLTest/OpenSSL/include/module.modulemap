@@ -1,0 +1,8 @@
+module openssl [system][extern_c] {
+    header "shim.h"
+    
+    link "ssl"
+    link "crypto"
+    
+    export *
+}

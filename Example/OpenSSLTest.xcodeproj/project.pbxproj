@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2A8E0C5E4DE160BC13B3FF68 /* Pods-OpenSSLTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSLTest_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSLTest_Tests/Pods-OpenSSLTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		34A41D684E24F4FD267F600C /* OpenSSLTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSLTest.podspec; path = ../OpenSSLTest.podspec; sourceTree = "<group>"; };
+		34A41D684E24F4FD267F600C /* OpenSSLTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OpenSSLTest.podspec; path = ../OpenSSLTest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47670726C6534C7F8180EEBB /* Pods-OpenSSLTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSLTest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSLTest_Example/Pods-OpenSSLTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OpenSSLTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSSLTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62572144CFC044D8366D0C91 /* Pods-OpenSSLTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSLTest_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSLTest_Example/Pods-OpenSSLTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B3591645827BE327EF611E92 /* Pods-OpenSSLTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSLTest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSLTest_Tests/Pods-OpenSSLTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C45285CA89ACB8C34F07D06D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DADE19EC46E87F5DB70AB488 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C45285CA89ACB8C34F07D06D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DADE19EC46E87F5DB70AB488 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E24EA937BD20BE8C6F5E2657 /* Pods_OpenSSLTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSSLTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF224DCAD0BDFEF5352CA74 /* Pods_OpenSSLTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSSLTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -267,15 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-OpenSSLTest_Tests-checkManifestLockResult.txt",
 			);
@@ -289,15 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-OpenSSLTest_Example-checkManifestLockResult.txt",
 			);
@@ -311,16 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenSSLTest_Tests/Pods-OpenSSLTest_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -335,15 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenSSLTest_Example/Pods-OpenSSLTest_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OpenSSLTest/OpenSSLTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSLTest.framework",
 			);

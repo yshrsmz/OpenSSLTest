@@ -21,22 +21,25 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/yshrsmz/OpenSSLTest'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/yshrsmz'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yshrsmz' => 'the.phantom.bane@gmail.com' }
   s.source           = { :git => 'https://github.com/yshrsmz/OpenSSLTest.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.module_name = 'OpenSSLTest'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'OpenSSLTest/Classes/**/*'
+  s.source_files = 'OpenSSLTest/Classes/**/*.swift', 'OpenSSLTest/OpenSSL/include/**/*.h', 'OpenSSLTest/OpenSSL/include/shim.h'
+  s.header_dir = 'openssl'
+  s.header_mappings_dir = 'OpenSSLTest/OpenSSL/include'
+  s.public_header_files = 'OpenSSLTest/OpenSSL/include/openssl/*.h', 'OpenSSLTest/OpenSSL/include/shim.h'
+  s.preserve_paths = 'OpenSSLTest/OpenSSL/**/*', 'OpenSSLTest/OpenSSL/include/module.modulemap'
+  s.vendored_libraries = 'OpenSSLTest/OpenSSL/lib/libcrypto.a', 'OpenSSLTest/OpenSSL/lib/libssl.a'
   
-  # s.resource_bundles = {
-  #   'OpenSSLTest' => ['OpenSSLTest/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = {
+      'SWIFT_INCLUDE_PATHS' => '$(inherited) ${SRCROOT}/OpenSSLTest/OpenSSL/**',
+      'HEADER_SEARCH_PATHS' => '$(inherited) ${SRCROOT}/OpenSSLTest/OpenSSL/include/openssl ${SRCROOT}/OpenSSLTest/OpenSSL/include',
+      'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+      'SWIFT_VERSION' => '4.2'
+  }
 end

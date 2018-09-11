@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.0.3)
+  - OpenSSLTest (0.1.0)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - OpenSSLTest (from `../`)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  OpenSSLTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  OpenSSLTest: 7a0825cc18fe5a3d17e35a6ed69d1c7fbaaf96b4
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: a0657b7fc6ccbbd393c081ccf914f00383f3a72c
+
+COCOAPODS: 1.5.3

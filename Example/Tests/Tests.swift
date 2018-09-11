@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import OpenSSLTest
+@testable import OpenSSLTest
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

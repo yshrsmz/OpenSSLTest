@@ -1,0 +1,6 @@
+framework module OpenSSLTest {
+  umbrella header "OpenSSLTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
